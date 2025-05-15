@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Mi Nuevo Sitio Web"
+  title: ""
   sidebar:
     contents:
       - text: "Inicio"
@@ -19,5 +19,5 @@ format:
     css: styles.css
     toc: true
     toc-location: left
-    toc-title: "En esta página"
+    toc-title: "Contenido"
 

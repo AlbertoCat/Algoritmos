@@ -1,5 +1,5 @@
 ---
-title: "Página Principal"
+title: "Análisis de algoritmos"
 author: "Luis Alberto Rodríguez Catana"
 date: "05/12/2025"
 format: html
@@ -12,3 +12,78 @@ body {
   text-align: justify;
 }
 </style>
+```
+
+#### **¿Qué es un algoritmo?**
+
+En la ciencia de datos un algoritmo es un conjunto de reglas o procedimientos bien definidos que se utilizan para trabajar con grandes cantidades de datos. En realidad un procedimiento por etapas siendo un conjunto de reglas que hay que seguir para realizar una tarea o resolver un problema.
+
+De acurdo con Gomez y Salgado. (2016) un algoritmo puede definirse de la siguiente forma: "un algoritmo permite realizar una actividad mediante pasos sucesivos que no generen dudas a quien deba realizar dicha actividad, dados un estado inicial y una entrada, siguiendo los pasos sucesivos se llega a un estado final", en donde su principal objetivo es la optiización de los tiempos de trabajo
+
+**¿Cuáles son los tipos de algoritmos?**
+
+Siguiendo lo publicado por Aguilera, 2024, existen diferentes tipos de algoritmos, y pueden estar clasificados de acuerdo con sus funciones, estos se enlistan a continuación:
+
+Existen varios tipos de algoritmos, y su clasificación puede basarse en diversos criterios:
+
+##### **Secuenciales.**
+
+1.  Lineales: Realizan una secuencia de operaciones sin bucles o decisiones complejas.
+
+2.  Secuenciales: Ejecutan pasos en orden secuencial.
+
+##### **Iterativos.**
+
+1.  Bucles: Utilizan estructuras de repetición (for, while) para ejecutar un conjunto de instrucciones varias veces.
+
+##### **Recursivos.**
+
+1.  Recursión: Se llaman a sí mismos para resolver subproblemas más pequeños del mismo tipo.
+
+##### **Búsqueda.**
+
+1.  Búsqueda Secuencial: Examina cada elemento en secuencia hasta encontrar el valor buscado.
+
+2.  Búsqueda Binaria: Eficiente en listas ordenadas, divide repetidamente la búsqueda a la mitad.
+
+3.  Búsqueda por Hash: Utiliza funciones de hash para acceder rápidamente a datos.
+
+##### **Ordenamiento.**
+
+1.  Ordenamiento Burbuja: Intercambia elementos adyacentes hasta que la lista esté ordenada.
+
+2.  QuickSort: Divide la lista en subgrupos, ordena cada subgrupo y los combina.
+
+3.  MergeSort: Divide la lista a la mitad repetidamente, ordena cada mitad y fusiona las dos partes ordenadas.
+
+4.  Insertion Sort, Selection Sort, etc.: Otros algoritmos de ordenamiento.
+
+##### **Grafos.**
+
+-   Búsqueda en Profundidad (DFS): Explora tan lejos como sea posible a lo largo de cada rama antes de retroceder.
+
+-   Búsqueda en Anchura (BFS): Explora todos los nodos vecinos a la vez antes de pasar a los nodos siguientes.
+
+Una vez explicados algunos conceptos vistos durante el periodo escolar, se debe hacer mención que este sitio web es un repositorio donde se pueden consultar los trabajos relacionados con el análisis de algoritmos y estructuras de datos, estos ejercicios tuvieron como finalidad desarrollar las habilidades para poder optimizar los recursos computacionales para reducir costos o incluso procesar grandes cantidades de datos en menos tiempo.
+
+Durante el semestre que comprendió el periodo de enero a mayo de 2025, se realizaron 5 experimentos, en donde cada uno de ellos plantea problemas de escalabilidad, búsquedas acotadas, tiempos de ejecución en la solución de matrices, entre otros. Los trabajos presentados se elaboraron con dos tipos de lenguajes uno de ellos es Julia el cual es un lenguaje de alto rendiiento diseñado para tareas de computación científica, Machine Learning, ciencia de datos y cálculos matemáticos avanzados.
+
+El segundo lenguaje empleado fue Python, este sustituyo a Julia cuando la salida no puedo ser completada a los errores que no pudieron ser solucionados debido a la poca experiencia con el lenguaje y la documentación escasa con la que cuenta para la solución de determinados problemas. Cunado fue posible se utilizó lo recomendando en el "Curso Introductorio al Análisis de Algoritmos con Julia" proporcionado por el Dr. Eric Sadit Téllez Ávila, para la resolución de problemas.
+
+**Referencias.**
+
+-   Aguilar, R. 2024. ¿Qué tipos de algoritmos existen y cuáles son sus funciones?, Consultado el 10 de mayo de 2025,recuperado de <https://blog.desafiolatam.com/que-tipos-de-algoritmos-existen-y-cuales-son-sus-funciones/>.
+
+-   Gomez,E., Salgado,N.(2016). Logica de Algoritmos- Un enfoque Practico- Programación en Lenguaje C. Recuperado de: <https://www.researchgate.> net/publication /2966719 28Logica_de_Algoritmos-\_Un_enfoque_Practico-\_Programacion_en_Lenguaje_C.
+
+-   Sadit-Téllez, E. 2025. Curso Introductorio al Análisis de Algoritmos con Julia. consultado el 11 de mayo de 2025, recuperado de <https://sadit.github.io/ALGO-IR/Curso-Introductorio-al-An%C3%A1lisis-de-Algoritmos-con-Julia.pdf>
+
+------------------------------------------------------------------------
+
+::: {style="text-align: center; font-size: 0.9em; color: gray; margin-top: 2em; border-top: 1px solid #ccc; padding-top: 1em;"}
+© 2025 Luis Alberto Rodríguez Catana.
+
+Maestría en Ciencia de datos e información.
+
+Todos los derechos reservados.
+:::
