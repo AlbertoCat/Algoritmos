@@ -1,14 +1,15 @@
 ---
-title: "Página Principal"
+title: "Algoritmos O grande"
+author: "Luis Alberto Rodríguez Catana"
+date: "05/12/2025"
+version: "v1"
+format: html
+editor: visual
 ---
 
 ```{=html}
 <style>
 body {
-  text-align: justify;
-}
-/* O para un párrafo específico */
-p.justificado {
   text-align: justify;
 }
 </style>

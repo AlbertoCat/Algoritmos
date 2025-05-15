@@ -1,7 +1,14 @@
 ---
-title: "Mi Nuevo Sitio Web"
+title: "Página Principal"
+author: "Luis Alberto Rodríguez Catana"
+date: "05/12/2025"
+format: html
+editor: visual
 ---
 
-# Bienvenido
-
-Este es el contenido de mi página principal.
+```{=html}
+<style>
+body {
+  text-align: justify;
+}
+</style>

@@ -5,12 +5,13 @@ project:
 website:
   title: "Mi Nuevo Sitio Web"
   sidebar:
-    - text: "Inicio"
-      href: index.html
-    - text: "Algoritmos O grande"
-      href: exp_1.html
-    - text: "Estructura de Datos"
-      href: exp_2.html
+    contents:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Algoritmos O grande"
+        href: exp_1.qmd
+      - text: "Estructura de Datos"
+        href: exp_2.qmd
 
 format:
   html:
@@ -19,3 +20,4 @@ format:
     toc: true
     toc-location: left
     toc-title: "En esta página"
+
