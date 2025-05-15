@@ -1,0 +1,176 @@
+---
+title: "Experimento y análisis de estructura de datos"
+author: "Luis Alberto Rodriguez Catana"
+date: "05/12/2025"
+version: "v1"
+format: html
+editor: visual
+---
+
+```{=html}
+<style>
+body {
+  text-align: justify;
+}
+/* O para un párrafo específico */
+p.justificado {
+  text-align: justify;
+}
+</style>
+```
+
+Versión original
+
+### Introducción
+
+La multiplicación de matrices y la eliminación gaussiana son dos de los algoritmos Principales en el campo del álgebra lineal y tienen aplicaciones en diversas áreas. La multiplicación de matrices es esencial para resolver sistemas de ecuaciones lineales, realizar transformaciones en gráficos y en el procesamiento de datos. Por otro lado, la eliminación gaussiana es un método clave para resolver sistemas de ecuaciones lineales y para encontrar la inversa de matrices, siendo un pilar en la teoría de matrices.
+
+El análisis del rendimiento de estos algoritmos es crucial, especialmente en el contexto de matrices grandes, donde la complejidad computacional puede afectar significativamente el tiempo de ejecución. En el experimento 1 de la presente materia se vio el desempeño de algoritmos de la notación O grande, que proporcionan límites en el nivel de complejidad computacional con respecto al tamaño de los valores de entrada. De acuerdo con el blog de Quant Econ, Jesse Perla, Thomas Sargent y John Stachurski, una matriz densa es **O(N3)** que debe leerse como una constante donde eventualmente el número de operaciones de punto flotante requeridas para descomponer una matriz de tamaño **N x N**, crecerá cúbicamente.
+
+La multiplicación de matrices densas es una operación que puede ser costosa hablando de recursos computacionales, en done un **O(N3)** con una operación P veces, la complejidad permanece **O(N3)**. La versión más simple por así decirlo es **O(N3)** mientras que los algoritmos más rápidos conocidos (por ejemplo, Coppersmith-Winograd) son aproximadamente **O(N2.37)**. Una de las consecuencias es que, debido a que muchos algoritmos dependen de la multiplicación de matrices, generalmente no se puede superar ese orden sin incorporar una estructura matricial adicional.
+
+En otras palabras, aunque cambiar la constante de proporcionalidad para un tamaño específico pueda ser útil, para obtener un mejor escalado es necesario reconocer la estructura de la matriz (como, por ejemplo, tridiagonal o dispersa) y garantizar que las operaciones no alteren esa estructura. De acuerdo con lo anterior este experimento se centra en implementar y comparar el rendimiento de la multiplicación de matrices y la eliminación gaussiana utilizando Julia, en donde se medirán tanto el número de operaciones realizadas como el tiempo de ejecución para matrices de diferentes tamaños.
+
+### Experimentación.
+
+Se solicita la implementación de algoritmos sobre matrices para multiplicación de matrices y eliminación Gaussiana o Gauss-Jordan. Para comenzar a trabajar en implementar los algoritmos sobre matrices en Julia se utilizaron las librerías Random y LinearAlgebra, que de acuerdo con la documentación oficial consultado en Julia.org, este lenguaje proporciona implementaciones de operaciones de algebra lineal, por otra parte, la librería Random, se utiliza para la generación de números aleatorios.
+
+``` julia
+using Random
+using LinearAlgebra
+```
+
+Se definió una multiplicación de matrices con argumentos **A** y **B**, en la que n es una variable que obtiene el tamaño de la matriz A y que asume que es una matriz cuadrada y almacena el valor en la variable. La variable **C**, sirve para crear una matriz de ceros de tamaño n x n y almacena el resultado de la multiplicación. Posterior a esto se crea ciclos for que se encargan de iterar sobre las filas **A**, columna b y el tercer bucle itera sobre las columnas **A** o filas **B**. En la sección la expresión “**C \[i, j\] += A \[i, k\] \* B \[k, j\]**” se encarga de realizar la multiplicación de los elementos. Finalmente, Return se encarga de devolver la matriz resultante.
+
+``` julia
+# Con esta función podremos multiplicar matrices
+function multiplicar_matrices(A, B)
+    n = size(A, 1)
+    C = zeros(n, n)
+    multiplicaciones = 0
+    sumas = 0
+    
+    for i in 1:n
+        for j in 1:n
+            for k in 1:n
+                C[i, j] += A[i, k] * B[k, j]
+                multiplicaciones += 1
+                sumas += 1
+            end
+        end
+    end
+    return C, multiplicaciones, sumas
+end
+```
+
+### Función de eliminación Gaussiana.
+
+Al igual que para la multiplicación de matrices se declaró una variable **n** que tiene el tamaño de la matriz A. La variable operaciones se encarga de iniciar un contador para las operaciones realizadas, también se crearon ciclos ***for*** que iteran sobre las filas de la matriz para seleccionar el pivote y un segundo ciclo itera sobre las filas por debajo del pivote para obtener ceros por debajo de la matriz diagonal.
+
+``` julia
+# Eliminación gaussiana
+function eliminacion_gaussiana(A)
+    n = size(A, 1)
+    operaciones = 0
+    
+    for k in 1:n-1
+        for i in k+1:n
+            factor = A[i, k] / A[k, k]
+            operaciones += 1  # División
+            for j in k:n
+                A[i, j] -= factor * A[k, j]
+                operaciones += 1  # Multiplicación
+                operaciones += 1  # Resta
+            end
+        end
+    end
+    return A, operaciones
+end
+```
+
+### Comparación de desempeño.
+
+Para comparar los desempeños de ambos algoritmos contando el número de operaciones y el tiempo real para matrices aleatorias de tamaño **n x n** para **n = 100, 300, 1000**, se elaboró una función que mide el tiempo de ejecución y comparación del rendimiento. Se crea una función llamada medir tiempo, con argumentos **args**, el cual es un parámetro de longitud de la variable, lo que se traduce que puede recibir varios argumentos. **Time ()**, devuelve el tiempo actual en segundos y el resultado, devuelve dos valores por un lado el resultado de la función ejecutada y el tiempo que tardó en ejecutarse.
+
+Para la comparación del rendimiento para las operaciones de matrices multiplicación y eliminación gaussiana, se define una tupla con valores de 100, 300 y 1000, esto será una lista de tamaños 100x100, 300x300 y 1000x1000, el ciclo for anidado en el código crea dos matrices cuadradas de tamaño n x n con valores aleatorios que están entre 0 y 1.
+
+``` julia
+# Función para medir el tiempo de ejecución
+function medir_tiempo(func, args...)
+    start_time = time()
+    result = func(args...)
+    end_time = time()
+    return result, end_time - start_time
+end
+
+# Comparación de rendimiento
+n_values = [100, 300, 1000]
+for n in n_values
+    A = rand(n, n)
+    B = rand(n, n)
+```
+
+Los datos de conteo de operaciones (multiplicaciones y sumas escalares) y las de tiempo real se manejan por separado.
+
+### Multiplicación de matrices.
+
+La multiplicación de matrices se encarga de llamar a la función multiplicar_matrices declaradas anteriormente en donde con las matrices **A** y **B**, mide el tiempo que tarda en ejecutarse y obtiene el resultado de la multiplicación (C), una vez realizada la acción imprime el número de multiplicaciones, sumas y el tiempo que ha tomado la operación para cada tamaño de matriz definida.
+
+``` julia
+# Multiplicación de matrices
+    (C, mult_ops, sum_ops), tiempo_mult = medir_tiempo(multiplicar_matrices, A, B)
+    println("Multiplicación de matrices (n=$n):")
+    println("Multiplicaciones: $mult_ops, Sumas: $sum_ops, Tiempo: $tiempo_mult segundos")
+    
+    # Eliminación gaussiana
+    A_copy = copy(A)  # Copiar A para no modificarlo
+    (A_reducido, gauss_ops), tiempo_gauss = medir_tiempo(eliminacion_gaussiana, A_copy)
+    println("Eliminación Gaussiana (n=$n):")
+    println("Operaciones: $gauss_ops, Tiempo: $tiempo_gauss segundos")
+end
+```
+
+A_reducido, gauss_ops, llama a la función eliminación gausisiana, mide el tiempo que tarda y devuelve la matriz reducida y el número de operaciones realizadas durante el proceso.
+
+### Resultados.
+
+``` julia
+Multiplicación de matrices (n=100):
+Multiplicaciones: 1000000, Sumas: 1000000, Tiempo: 0.032412052154541016 segundos
+Eliminación Gaussiana (n=100):
+Operaciones: 671550, Tiempo: 0.03956890106201172 segundos
+Multiplicación de matrices (n=300):
+Multiplicaciones: 27000000, Sumas: 27000000, Tiempo: 0.05527615547180176 segundos
+Eliminación Gaussiana (n=300):
+Operaciones: 18044650, Tiempo: 0.006022930145263672 segundos
+Multiplicación de matrices (n=1000):
+Multiplicaciones: 1000000000, Sumas: 1000000000, Tiempo: 1.8937299251556396 segundos
+Eliminación Gaussiana (n=1000):
+Operaciones: 667165500, Tiempo: 0.3934030532836914 segundos
+```
+
+Los resultados de ejecución del código, muestran que para la multiplicación de matrices, el número de multiplicaciones y sumas crece como O(N3), se observa claramente en los resultados, donde al aumentar **(n)** de **100** a **300** y luego a **1000**, el número de operaciones se incrementa significativamente (de **1,000,000** a **1,000,000,000**).
+
+En cuanto a la eliminación gaussiana, aunque también se espera un crecimiento cúbico, el número total de operaciones es menor en comparación con la multiplicación de matrices para el mismo tamaño de matriz. Esto se debe a que la eliminación gaussiana implica menos operaciones en términos de multiplicaciones y sumas en su implementación.
+
+Los tiempos de ejecución muestran un aumento significativo con el tamaño de la matriz. Para (**n= 1000**) el tiempo de ejecución es de aproximadamente de **3.51** segundos lo que se traduce en que el algoritmo se vuelve considerablemente más lento a medida que aumenta el tamaño de la matriz. En contraste a los valores de la matriz que se vuelven lentos, en la eliminación gaussiana los tiempos son notablemente más bajos, para **n =300** y **n= 1000**, lo que sugiere que a pesar de que el número de operaciones es alto, la implementación de la eliminación gaussiana es más eficiente en términos de tiempo.
+
+### Discusión.
+
+La implementación y comparación de estos algoritmos en Julia demuestra la importancia de la eficiencia computacional y el acceso a la memoria en el rendimiento de algoritmos de álgebra lineal. La eliminación gaussiana es más eficiente en términos de tiempo para matrices grandes, a pesar de tener un número considerable de operaciones, por lo que el acceso a la memoria son factores críticos en el rendimiento. A medida que el tamaño de la matriz aumenta el tiempo de ejecución se incrementa drásticamente lo que demuestra la necesidad de algoritmos más eficientes o técnicas de optimización, especialmente en aplicaciones que necesitan el manejo de grandes volúmenes de datos.
+
+El acceso eficiente a elementos adyacentes en memoria es fundamental para el rendimiento. En Julia, las matrices se almacenan de forma contigua en la memoria, lo que facilita un acceso más rápido gracias a la localidad espacial. Esto implica que las operaciones que acceden a elementos consecutivos son más rápidas que aquellas que requieren acceder a elementos dispersos, lo que mejora el rendimiento en algoritmos como la multiplicación de matrices.
+
+Cuando se utilizan matrices dispersas, es necesario adoptar un enfoque diferente. Estas matrices requieren estructuras de datos especializadas, como listas enlazadas o matrices de coordenadas, para almacenar únicamente los elementos no nulos. Esto ayuda a reducir el uso de memoria y puede mejorar la eficiencia en términos de tiempo de ejecución para operaciones que solo involucren los elementos no nulos. Sin embargo, gestionar estas estructuras de datos puede generar una sobrecarga que aumente el costo de las operaciones.
+
+Por lo tanto, es fundamental evaluar tanto el tipo de matriz como el algoritmo empleado para elegir la estrategia más adecuada.
+
+### Literatura citada.
+
+• D. Coppersmith and S. Winograd, Matrix multiplication via arithmetic progressions, Proceedings of the nineteenth annual ACM symposium on Theory of computing, ACM New York, NY, USA, 1987, pp. 1–6.
+
+• Linear algebra. (n.d.). Julialang.org. Consultado el 18 de febrero de 2025. Disponible en: <https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/.>
+
+• Numerical linear algebra and factorizations. (n.d.). Quantitative Economics with Julia. Consultado el 17 de febrero de 2025. Disponible en: <https://julia.quantecon.org/tools_and_techniques/numerical_linear_algebra.html>
+
+• Random numbers The Julia Language. (n.d.). Julialang.org. Consultado el 15 de febrero de 2025. Disponible en <https://docs.julialang.org/en/v1/stdlib/Random/>

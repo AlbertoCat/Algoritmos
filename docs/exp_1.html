@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Página Principal – Mi Nuevo Sitio Web</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d4be639c637f3db3c684c66cefad7e0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Mi Nuevo Sitio Web
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Mi Nuevo Sitio Web</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#definición-de-funciones-de-complejidad-en-julia" id="toc-definición-de-funciones-de-complejidad-en-julia" class="nav-link" data-scroll-target="#definición-de-funciones-de-complejidad-en-julia">Definición de funciones de complejidad en Julia</a></li>
+  <li><a href="#resultados-de-la-experimentación." id="toc-resultados-de-la-experimentación." class="nav-link" data-scroll-target="#resultados-de-la-experimentación.">Resultados de la experimentación.</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Página Principal</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+body {
+  text-align: justify;
+}
+/* O para un párrafo específico */
+p.justificado {
+  text-align: justify;
+}
+</style>
+<p>Versión corregida.</p>
+<section id="introducción" class="level3">
+<h3 class="anchored" data-anchor-id="introducción">Introducción</h3>
+<p>El presente trabajo muestra los resultados obtenidos a partir de la simulación de los órdenes de crecimiento O(1) vs O(logn), O(n) vs O(nlogn), O(n2) vs O(n3), O(an) vs O(n!), O(n!) vs O(nn), propuestos para su simulación.</p>
+<p>Con la finalidad de obtener un antecedente sobre cómo resolver este tipo de ejercicio se consultó lo relacionado con la notación O grande, la cual es una herramienta utilizada para describir el rendimiento o la complejidad temporal de un algoritmo en función del tamaño de la entrada.</p>
+<p>El objetivo principal de la notación O grande de acuerdo con Bhargava, A., 2016, es evaluar cuán veloz es un algoritmo, expresando su eficiencia en términos de su comportamiento a medida que el tamaño de la entrada (n) crece. A continuación, se describen las notaciones más comunes de la notación O grande:</p>
+<ul>
+<li><span class="math inline">\(O(1)\)</span>: Tiempo constante</li>
+<li><span class="math inline">\(O(\log n)\)</span>: Tiempo logarítmico</li>
+<li><span class="math inline">\(O(n)\)</span>: Tiempo lineal</li>
+<li><span class="math inline">\(O(n \log n)\)</span>: Tiempo lineal-logarítmico</li>
+<li><span class="math inline">\(O(n^2)\)</span>: Tiempo cuadrático</li>
+<li><span class="math inline">\(O(2^n)\)</span>: Tiempo exponencial</li>
+<li><span class="math inline">\(O(n!)\)</span>: Tiempo factorial</li>
+<li><span class="math inline">\(O(n^n)\)</span>: Tiempo exponencial en base <span class="math inline">\(n\)</span></li>
+</ul>
+<p>De acuerdo con lo anterior la notación O grande describe el comportamiento asintótico de una función, en esta primera práctica de experimentación se compararon distintos órdenes de crecimiento.</p>
+</section>
+<section id="definición-de-funciones-de-complejidad-en-julia" class="level3">
+<h3 class="anchored" data-anchor-id="definición-de-funciones-de-complejidad-en-julia">Definición de funciones de complejidad en Julia</h3>
+<p>El primer paso en el proceso consistió en definir funciones en Julia que simulan cada orden de crecimiento.</p>
+<p>Se utilizaron las librerías</p>
+<p><code>import Pkg; Pkg.add("DataFrames")</code></p>
+<p><code>using Plots, DataFrames, Printf gr()</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Onlogn</span>(n)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n <span class="op">*</span> <span class="fu">log</span>(n)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># O(n^2) - Tiempo cuadrático</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">On2</span>(n)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n<span class="op">^</span><span class="fl">2</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># O(n^3) - Tiempo cúbico</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">On3</span>(n)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n<span class="op">^</span><span class="fl">3</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># O(a^n) - Tiempo exponencial (a &gt; 1)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Oan</span>(n, a<span class="op">=</span><span class="fl">2</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a<span class="op">^</span>n</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># O(n!) - Tiempo factorial</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Onfactorial</span>(n)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">factorial</span>(n)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># O(n^n) - Tiempo exponencial en base n</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">Onn</span>(n)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n<span class="op">^</span>n</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Rangos adecuados para cada comparación</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span>  <span class="co"># Para O(1) vs O(log n) y O(n) vs O(n log n)</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>n_values_large <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span>  <span class="co"># Para O(n^2) vs O(n^3), O(a^n) vs O(n!), y O(n!) vs O(n^n)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="resultados-de-la-experimentación." class="level3">
+<h3 class="anchored" data-anchor-id="resultados-de-la-experimentación.">Resultados de la experimentación.</h3>
+<p>La simulación se llevó a cabo utilizando el lenguaje de programación Julia. Para la comparación de los órdenes de crecimiento, se definieron rangos de valores específicos. El rango de <code>1:100</code> se aplicó a aquellos órdenes que presentan un crecimiento más lento, mientras que los rangos más acotados de <code>1:20</code>, <code>1:10</code> y <code>1:15</code> se utilizaron para evaluar órdenes con tasas de crecimiento potencialmente elevadas, como las funciones factoriales y exponenciales.</p>
+<p>La definición de los rangos de comparación se implementó mediante el siguiente diccionario en Julia:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>rangos_comparaciones <span class="op">=</span> <span class="fu">Dict</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"O(1) vs O(log n)"</span> <span class="op">=&gt;</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"O(n) vs O(n log n)"</span> <span class="op">=&gt;</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"O(n²) vs O(n³)"</span> <span class="op">=&gt;</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"O(2ⁿ) vs O(n!)"</span> <span class="op">=&gt;</span> <span class="fl">1</span><span class="op">:</span><span class="fl">15</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"O(n!) vs O(nⁿ)"</span> <span class="op">=&gt;</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para cada par de funciones se generó un gráfico comparativo.</p>
+<section id="comparación-o1-vs-olog-n" class="level5">
+<h5 class="anchored" data-anchor-id="comparación-o1-vs-olog-n">Comparación: <code>O(1) vs O(log n)</code></h5>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rangos adecuados para cada comparación</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span>  <span class="co"># Para O(1) vs O(log n) y O(n) vs O(n log n)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_values_large <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span>  <span class="co"># Para O(n^2) vs O(n^3), O(a^n) vs O(n!), y O(n!) vs O(n^n)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/Figura 1.png" class="img-fluid"></p>
+<div class="text-center">
+<p><strong>Gráfica 1: O(1) vs O(log n)</strong></p>
+</div>
+<p>La <strong>Gráfica 1</strong> obtenida resultado de comparar O(1) vs O(logn), se muestra la complejidad de los algoritmos, la línea azul muestra que el algoritmo O(1) es constante y que independientemente del tamaño de n sea igual a 10, 100 y 1000 el tiempo de ejecución siempre será el mismo. La línea naranja, representa O(logn), que es una curva creciente, pero es significativamente más lento que el crecimiento lineal, el grafico muestra la diferencia de rendimiento entre los algoritmos, los algoritmos de complejidad temporal son altamente eficientes ya que el tiempo necesario para completar la tarea es la misma incluso cuando cambia el tamaño de n, por otra parte, los algoritmos de complejidad temporal logarítmica se pueden considerar eficientes pero pueden volverse más lentos al cambiar la entrada de n por un valor mayor.</p>
+</section>
+<section id="comparación-on-vs-on-log-n" class="level5">
+<h5 class="anchored" data-anchor-id="comparación-on-vs-on-log-n">Comparación: <code>O(n) vs O(n log n)</code></h5>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(n_values, [<span class="fu">On</span>.(n_values) <span class="fu">Onlogn</span>.(n_values)], label<span class="op">=</span>[<span class="st">"O(n)"</span> <span class="st">"O(n log n)"</span>], xlabel<span class="op">=</span><span class="st">"n"</span>, ylabel<span class="op">=</span><span class="st">"Tiempo"</span>, title<span class="op">=</span><span class="st">"O(n) vs O(n log n)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/Figura 2.png" class="img-fluid"></p>
+<div class="text-center">
+<p><strong>Gráfica 2: <code>O(n) vs O(n log n)</code></strong></p>
+</div>
+<p>El gráfico comparativo de los algoritmos O(n) vs O(n log n) en donde la línea azul es el algoritmo de tiempo lineal y la línea naranja es de tiempo lineal logarítmico. El algoritmo O(n log n) tiene un comportamiento más lento en comparación al algoritmo O(n), pero en medida que el tamaño de la entrada aumenta el tiempo de ejecución del algoritmo O(n log n) crecerá más rápido que O(n). Cuando la entrada n es grande. algoritmo O(n) es significativamente más rápido que el algoritmo O(n log n), esto resulta ser más perceptible en grandes cantidades de datos.</p>
+</section>
+<section id="comparación-on2-vs-on3" class="level5">
+<h5 class="anchored" data-anchor-id="comparación-on2-vs-on3">Comparación: <code>O(n^2) vs O(n^3)</code></h5>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(n_values_large, [<span class="fu">On2</span>.(n_values_large) <span class="fu">On3</span>.(n_values_large)], label<span class="op">=</span>[<span class="st">"O(n^2)"</span> <span class="st">"O(n^3)"</span>], xlabel<span class="op">=</span><span class="st">"n"</span>, ylabel<span class="op">=</span><span class="st">"Tiempo"</span>, title<span class="op">=</span><span class="st">"O(n^2) vs O(n^3)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/Figura 3.png" class="img-fluid"></p>
+<div class="text-center">
+<p><strong>Gráfica 3: <code>O(n^2) vs O(n^3)</code></strong></p>
+</div>
+<p>La <strong>Gráfica 3</strong>, representa la complejidad temporal de dos algoritmos con diferentes órdenes de magnitud: O(n2) y O(n3). La línea azul representa el algoritmo con complejidad O(n2), mientras que la línea naranja representa el algoritmo con complejidad O(n3). Como se observa, la línea naranja crece más rápido que la línea azul, lo que indica que el algoritmo O(n3) tiene un tiempo de ejecución mucho mayor que el algoritmo O(n2) a medida que el tamaño de la entrada (n) aumenta. Este comportamiento se debe a que el algoritmo O(n3) realiza un número de operaciones proporcionales an3, mientras que el algoritmo O(n2) realiza un número de operaciones proporcionales an2. En otras palabras, si n = 10, el algoritmo O(n3) realizaría 1000 operaciones, mientras que el algoritmo O(n2) realizaría 100 operaciones. Esto ilustra por qué las funciones polinómicas de mayor grado, como O(n3), pueden llegar a ser extremadamente costosas para grandes entradas, mientras que las funciones de menor grado, como O(n^2), pueden manejar entradas más grandes con mayor eficiencia.</p>
+</section>
+<section id="comparación-o2n-vs-on" class="level5">
+<h5 class="anchored" data-anchor-id="comparación-o2n-vs-on">Comparación: <code>O(2n) vs O(n!)</code></h5>
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(n_values_large, [<span class="fu">Oan</span>.(n_values_large) <span class="fu">Onfactorial</span>.(n_values_large)], label<span class="op">=</span>[<span class="st">"O(2^n)"</span> <span class="st">"O(n!)"</span>], xlabel<span class="op">=</span><span class="st">"n"</span>, ylabel<span class="op">=</span><span class="st">"Tiempo"</span>, title<span class="op">=</span><span class="st">"O(2^n) vs O(n!)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/Figura 4.png" class="img-fluid"></p>
+<div class="text-center">
+<p><strong>Gráfica 4: <code>O(2^n) vs O(n!)</code></strong></p>
+</div>
+<p>El gráfico resultante representa la comparación del tiempo de ejecución de dos algoritmos con diferentes complejidades: O(2n) y O(n!). La línea azul representa el algoritmo con complejidad O(2n), mientras que la línea naranja representa el algoritmo con complejidad O(n!). Se puede observar que el algoritmo O(2n) mantiene un tiempo de ejecución constante y relativamente bajo a medida que aumenta el valor de n.&nbsp;Por otro lado, el algoritmo O(n!) presenta un crecimiento exponencial del tiempo de ejecución a partir de un valor determinado de n, provocando un crecimiento abrupto. El tiempo de ejecución del algoritmo O(2n) crece a un ritmo mucho más lento que el algoritmo O(n!) lo que hace que éste último sea mucho más ineficiente para valores grandes de n.</p>
+</section>
+<section id="comparación-o2n-vs-on-1" class="level5">
+<h5 class="anchored" data-anchor-id="comparación-o2n-vs-on-1">Comparación: <code>O(2n) vs O(n!)</code></h5>
+<p>Como <code>n^n</code> y <code>n!</code> crecen exponencialmente, se utilizó <code>yscale = :log10</code> para facilitar su comparación visual:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(n_values_large,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>     [<span class="fu">BigInt</span>.(<span class="fu">factorial</span>.(n_values_large)) [<span class="fu">BigInt</span>(n)<span class="op">^</span>n for n <span class="kw">in</span> n_values_large]],</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>     label<span class="op">=</span>[<span class="st">"O(n!)"</span> <span class="st">"O(n^n)"</span>],</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>     xlabel<span class="op">=</span><span class="st">"n"</span>, ylabel<span class="op">=</span><span class="st">"Tiempo"</span>,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>     title<span class="op">=</span><span class="st">"O(n!) vs O(n^n)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/Figura 5.png" class="img-fluid"></p>
+<div class="text-center">
+<p><strong>Gráfica 5: <code>O(2n) vs O(n!)</code></strong></p>
+</div>
+<p>De acuerdo con Knuth, D. 1973, el algoritmo factorial es una función que crece rápidamente, incluso más rápido que una función exponencial. En la Gráfica 5 se compara el crecimiento de dos funciones de complejidad algorítmica extremadamente alta: O(n!) (factorial de n) y O(n) (n elevado a la potencia de n). Esta comparación se realiza en el intervalo de valores de entrada n∈[1,20]. El eje horizontal (x) representa el tamaño de la entrada (n), mientras que el eje vertical (y) muestra el tiempo de ejecución simulado utilizando una escala logarítmica.</p>
+<p>Ambas curvas exhiben un crecimiento exponencial extremo, una característica distintiva de las complejidades no polinómicas. Este crecimiento, aunque inicialmente lento para valores muy pequeños de n, se dispara de manera abrupta a partir de valores moderados, situados alrededor de n=6 a 8. Este comportamiento subraya la rapidez con la que los tiempos de ejecución pueden volverse prohibitivos para algoritmos con estas complejidades a medida que el tamaño de la entrada aumenta ligeramente.</p>
+<p>Para ilustrar la magnitud de estos crecimientos, consideremos un valor de entrada de n≈15. En este punto, el tiempo de ejecución simulado para un algoritmo con complejidad O(n!) ya supera las 1011 unidades. En contraste, un algoritmo con complejidad O(nn) alcanza valores del orden de 1020 incluso antes de que n llegue a 20. Estas cifras astronómicas resaltan la impracticabilidad de estos algoritmos para incluso tamaños de entrada relativamente pequeños.</p>
+</section>
+<section id="tiempos-de-ejecución" class="level5">
+<h5 class="anchored" data-anchor-id="tiempos-de-ejecución">Tiempos de ejecución</h5>
+<p>El siguiente bloque de código evalúa y compara el comportamiento de distintas funciones de complejidad algorítmica para varios tamaños de entrada <code>n</code>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>n_sizes <span class="op">=</span> [<span class="fl">100</span>, <span class="fl">1000</span>, <span class="fl">10000</span>, <span class="fl">100000</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> <span class="fu">DataFrame</span>(n <span class="op">=</span> <span class="dt">Int</span>[], O1 <span class="op">=</span> <span class="dt">Float64</span>[], Ologn <span class="op">=</span> <span class="dt">Float64</span>[], On <span class="op">=</span> <span class="dt">Float64</span>[],</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>               Onlogn <span class="op">=</span> <span class="dt">Float64</span>[], On2 <span class="op">=</span> <span class="dt">Float64</span>[], On3 <span class="op">=</span> <span class="dt">Float64</span>[],</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>               Oan <span class="op">=</span> <span class="dt">Float64</span>[], Onfactorial <span class="op">=</span> <span class="dt">Float64</span>[], Onn <span class="op">=</span> <span class="dt">Float64</span>[])</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> n_sizes</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    n_big <span class="op">=</span> <span class="fu">big</span>(n)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(df, (n, <span class="fu">O1</span>(n), <span class="fu">Ologn</span>(n), <span class="fu">On</span>(n), <span class="fu">Onlogn</span>(n), <span class="fu">On2</span>(n), <span class="fu">On3</span>(n),</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>               <span class="fu">Oan</span>(n), <span class="fu">Onfactorial</span>(n_big), <span class="fu">Onn</span>(n_big)))</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>4×10 DataFrame
+ Row │ n       O1       Ologn     On        Onlogn         On2         On3      Oan      Onfactorial    Onn       
+     │ Int64   Float64  Float64   Float64   Float64        Float64     Float64  Float64  Float64        Float64   
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │    100      1.0   4.60517     100.0    460.517      10000.0      1.0e6       0.0    9.33262e157    1.0e200
+   2 │   1000      1.0   6.90776    1000.0   6907.76           1.0e6    1.0e9       0.0  Inf            Inf
+   3 │  10000      1.0   9.21034   10000.0  92103.4            1.0e8    1.0e12      0.0  Inf            Inf
+   4 │ 100000      1.0  11.5129   100000.0      1.15129e6      1.0e10   1.0e15      0.0  Inf            Inf</code></pre>
+<div class="text-center">
+<p><strong>Tabla 1. Tiempos de ejecución</strong></p>
+</div>
+<p>La Tabla 1 compara los tiempos de ejecución simulados (en nanosegundos) de algoritmos con distintas órdenes de complejidad: O(1), O(logn), O(n), O(nlogn), O(n2), O(n3), O(2n), O(n!) y O(nn), considerando tamaños de entrada de n=100,1000,10000 y 100000. Estos valores ilustran cómo escala el tiempo requerido a medida que aumenta el tamaño de los datos.</p>
+<p>Como se esperaba, la complejidad O(1) se mantiene constante en 1 nanosegundo para cualquier tamaño de entrada. Este comportamiento confirma que los algoritmos de tiempo constante no dependen de la magnitud del problema, ejecutando una única operación independientemente de la cantidad de datos.</p>
+<p>La complejidad O(logn) exhibe un crecimiento muy lento y progresivo. Aunque aumenta con n, su incremento es mínimo incluso en escalas grandes, lo que la convierte en una complejidad altamente eficiente. Por ejemplo, para n=100000, el tiempo apenas se diferencia del registrado para n=100.</p>
+<p>Los algoritmos con complejidad O(n) escalan de forma lineal: el tiempo de ejecución se incrementa en proporción directa al tamaño de la entrada. Esto se evidencia al observar que para n=100000, el tiempo simulado es de aproximadamente 100000 ns, lo que demuestra un comportamiento predecible y manejable incluso con grandes volúmenes de datos.</p>
+<p>En contraste, las complejidades O(n2) y O(n3) muestran un crecimiento polinómico mucho más pronunciado. Por ejemplo, para n=100, se obtienen tiempos de 10000 ns y 1000000 ns respectivamente, lo cual anticipa una escalabilidad deficiente. Tal como señalan Cormen et al.&nbsp;(2009), los algoritmos con complejidades polinómicas elevadas resultan prácticos solo para tamaños de entrada pequeños, ya que rápidamente se vuelven inviables en escenarios reales con grandes conjuntos de datos.</p>
+<p>Finalmente, las clases de complejidad exponencial (como O(2n)) y superexponencial o hiperexponencial (como O(n!) y O(nn)) representan órdenes de crecimiento que exceden ampliamente los límites computacionales prácticos. Estas funciones crecen tan rápidamente que, incluso para valores moderados de n, los tiempos de ejecución simulados se vuelven extremadamente altos o directamente incalculables (por ejemplo, ∞ para O(nn)). Como indica Bhargava (2016), los algoritmos con este tipo de complejidades se vuelven inoperantes ante tamaños de entrada sorprendentemente pequeños, y su aplicabilidad se restringe a contextos altamente especializados o académicos.</p>
+</section>
+</section>
+<section id="referencias" class="level3">
+<h3 class="anchored" data-anchor-id="referencias">Referencias</h3>
+<ul>
+<li><p>Bhargava, A. (2016). Grokking algorithms: Video edition. Manning Publications. 256 pág.</p></li>
+<li><p>Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein, Clifford (2009). Introducción a los algoritmos (4ª ed.). MIT Press &amp; McGraw- Hill. ISBN 9780262533058.1312 págs.</p></li>
+<li><p>Knuth, D. (1973). The Art of Computer Programming: Volume 3: Sorting and Searching. Consultado el 04 de febrero de 2025. Disponible en <a href="https://openlibrary.org/books/OL657041M/The_art_of_computer_programming" class="uri">https://openlibrary.org/books/OL657041M/The_art_of_computer_programming</a></p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

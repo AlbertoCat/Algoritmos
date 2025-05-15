@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Mi Nuevo Sitio Web"
+  sidebar:
+    - text: "Inicio"
+      href: index.html
+    - text: "Algoritmos O grande"
+      href: exp_1.html
+    - text: "Estructura de Datos"
+      href: exp_2.html
+
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: true
+    toc-location: left
+    toc-title: "En esta página"

@@ -1,0 +1,24 @@
+/* Cambiar la fuente del cuerpo del texto */
+body {
+  font-family: sans-serif; /* O una fuente específica como Arial, Helvetica, etc. */
+}
+
+/* Cambiar el color de los encabezados h1 */
+h1 {
+  color: navy;
+}
+
+/* Agregar un margen superior a los párrafos */
+p {
+  margin-top: 1em;
+}
+
+/* Cambiar el color de los enlaces */
+a {
+  color: darkgreen;
+}
+
+/* Cambiar el color de los enlaces al pasar el ratón por encima */
+a:hover {
+  color: forestgreen;
+}
