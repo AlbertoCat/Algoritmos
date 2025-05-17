@@ -174,3 +174,11 @@ Por lo tanto, es fundamental evaluar tanto el tipo de matriz como el algoritmo e
 • Numerical linear algebra and factorizations. (n.d.). Quantitative Economics with Julia. Consultado el 17 de febrero de 2025. Disponible en: <https://julia.quantecon.org/tools_and_techniques/numerical_linear_algebra.html>
 
 • Random numbers The Julia Language. (n.d.). Julialang.org. Consultado el 15 de febrero de 2025. Disponible en <https://docs.julialang.org/en/v1/stdlib/Random/>
+
+::: {style="text-align: center; font-size: 0.9em; color: gray; margin-top: 2em; border-top: 1px solid #ccc; padding-top: 1em;"}
+© 2025 Luis Alberto Rodríguez Catana.
+
+Maestría en Ciencia de datos e información.
+
+Todos los derechos reservados.
+:::

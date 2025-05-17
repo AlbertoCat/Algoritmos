@@ -235,3 +235,11 @@ Finalmente, las clases de complejidad exponencial (como O(2n)) y superexponencia
 -   Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein, Clifford (2009). Introducción a los algoritmos (4ª ed.). MIT Press & McGraw- Hill. ISBN 9780262533058.1312 págs.
 
 -   Knuth, D. (1973). The Art of Computer Programming: Volume 3: Sorting and Searching. Consultado el 04 de febrero de 2025. Disponible en <https://openlibrary.org/books/OL657041M/The_art_of_computer_programming>
+
+::: {style="text-align: center; font-size: 0.9em; color: gray; margin-top: 2em; border-top: 1px solid #ccc; padding-top: 1em;"}
+© 2025 Luis Alberto Rodríguez Catana.
+
+Maestría en Ciencia de datos e información.
+
+Todos los derechos reservados.
+:::

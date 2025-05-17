@@ -12,6 +12,10 @@ website:
         href: exp_1.qmd
       - text: "Estructura de Datos"
         href: exp_2.qmd
+      - text: "Experimentos y análisis de algoritmos de ordenamiento."
+        href: exp_3.qmd
+      - text: "Experimentos y análisis de algoritmos de ordenamiento."
+        href: exp_4.qmd
 
 format:
   html:
