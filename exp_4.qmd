@@ -555,6 +555,10 @@ Al comparar los gráficos, se pueden observar las siguientes compensaciones entr
 
 Finalmente, el Skip List ofrece un equilibrio entre el rendimiento de la búsqueda y la simplicidad de la implementación, lo que lo convierte en una opción versátil para una variedad de aplicaciones.
 
+::: about-me
+<p></p>
+:::
+
 ### Referencias.
 
 -   Bentley, J. L., & Yao, A. C. (1976). An almost optimal algorithm for unbounded searching. *Information Processing Letters*, *5*(3), 82-87.

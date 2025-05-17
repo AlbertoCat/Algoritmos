@@ -165,7 +165,11 @@ Cuando se utilizan matrices dispersas, es necesario adoptar un enfoque diferente
 
 Por lo tanto, es fundamental evaluar tanto el tipo de matriz como el algoritmo empleado para elegir la estrategia más adecuada.
 
-### Literatura citada.
+::: about-me
+<p></p>
+:::
+
+### Referencias.
 
 • D. Coppersmith and S. Winograd, Matrix multiplication via arithmetic progressions, Proceedings of the nineteenth annual ACM symposium on Theory of computing, ACM New York, NY, USA, 1987, pp. 1–6.
 

@@ -228,6 +228,10 @@ En contraste, las complejidades O(n2) y O(n3) muestran un crecimiento polinómic
 
 Finalmente, las clases de complejidad exponencial (como O(2n)) y superexponencial o hiperexponencial (como O(n!) y O(nn)) representan órdenes de crecimiento que exceden ampliamente los límites computacionales prácticos. Estas funciones crecen tan rápidamente que, incluso para valores moderados de n, los tiempos de ejecución simulados se vuelven extremadamente altos o directamente incalculables (por ejemplo, ∞ para O(nn)). Como indica Bhargava (2016), los algoritmos con este tipo de complejidades se vuelven inoperantes ante tamaños de entrada sorprendentemente pequeños, y su aplicabilidad se restringe a contextos altamente especializados o académicos.
 
+::: about-me
+<p></p>
+:::
+
 ### Referencias
 
 -   Bhargava, A. (2016). Grokking algorithms: Video edition. Manning Publications. 256 pág.

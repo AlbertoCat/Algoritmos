@@ -1,3 +1,28 @@
+body {
+  text-align: justify;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-me p {
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+
 /* Cambiar la fuente del cuerpo del texto */
 body {
   font-family: sans-serif; /* O una fuente específica como Arial, Helvetica, etc. */
