@@ -8,7 +8,9 @@ css: styles.css
 ---
 
 ::: about-me
-<p></p>
+<p>
+
+</p>
 :::
 
 ![](portada/Pasted%20image.png){fig-align="center" width="389"}
@@ -86,7 +88,9 @@ El segundo lenguaje empleado fue Python, este sustituyo a Julia cuando la salida
 Cunado fue posible se utilizó lo recomendando en el "Curso Introductorio al Análisis de Algoritmos con Julia" proporcionado por el Dr. Eric Sadit Téllez Ávila, para la resolución de problemas.
 
 ::: about-me
-<p></p>
+<p>
+
+</p>
 :::
 
 **Referencias.**

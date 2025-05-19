@@ -623,7 +623,9 @@ HeapSort proporciona un equilibrio sólido, ofreciendo un rendimiento temporal c
 Para concluir, la selección del algoritmo de ordenamiento más adecuado depende de las prioridades específicas de la aplicación. Si la eficiencia de memoria es primordial, SkipSort parece ser la opción más ventajosa de acuerdo a lo observado en los graficos de resultados. Pero si la velocidad de ejecución es la principal preocupación y se puede tolerar un mayor uso de memoria, QuickSort podría ser preferible, aunque con la advertencia de su posible variabilidad. MergeSort es una elección sólida cuando se requiere un rendimiento temporal consistente y la memoria no es la limitación más crítica. InsertionSort se reserva para conjuntos pequeños o casi ordenados, mientras que HeapSort ofrece un compromiso consistente entre tiempo y espacio.
 
 ::: about-me
-<p></p>
+<p>
+
+</p>
 :::
 
 ### Referencias.

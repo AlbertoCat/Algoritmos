@@ -556,7 +556,9 @@ Al comparar los gráficos, se pueden observar las siguientes compensaciones entr
 Finalmente, el Skip List ofrece un equilibrio entre el rendimiento de la búsqueda y la simplicidad de la implementación, lo que lo convierte en una opción versátil para una variedad de aplicaciones.
 
 ::: about-me
-<p></p>
+<p>
+
+</p>
 :::
 
 ### Referencias.
@@ -565,7 +567,7 @@ Finalmente, el Skip List ofrece un equilibrio entre el rendimiento de la búsque
 
 -   Chaves, A. W. M. (2025). ALGORITMOS DE RESOLUCIÓN DE PROBLEMAS. Usam.Ac.Cr. Consultado el 27 de marzo y recuperado de <https://repositorio.usam.ac.cr/xmlui/bitstream/handle/11506/2052/LEC%20ING%20SIST%200020%202020> sequence=1&isAllowed=y.
 
--   Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to algorithms*. MIT press.
+-   Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). *Introduction to Algorithms* (3rd ed.). MIT Press. Consultado el 16 de mayo de 2025. Disponible en <https://enos.itcollege.ee/~japoia/algorithms/GT/Introduction_to_algorithms-3rd%20Edition.pdf>
 
 -   Emmita. (2017). Búsqueda binaria. Medium. Consultado el 26 de marzo y recuperado de <https://medium.com/>@Emmitta/b%C3%BAsqueda-binaria-c6187323cd72
 
@@ -573,7 +575,7 @@ Finalmente, el Skip List ofrece un equilibrio entre el rendimiento de la búsque
 
 -   Pugh, W. (1990). Skip lists: a probabilistic alternative to balanced trees. *Communications of the ACM*, *33*(6), 668-676.
 
--   Sadit, (s.f.). ALGO-IR. Recuperado de <https://sadit.github.io/ALGO-IR/>
+-   Sadit-Téllez, E. 2025. Curso Introductorio al Análisis de Algoritmos con Julia. consultado el 11 de mayo de 2025, recuperado de <https://sadit.github.io/ALGO-IR/Curso-Introductorio-al-An%C3%A1lisis-de-Algoritmos-con-Julia.pdf>
 
 ::: {#footer style="text-align: center; font-size: 0.9em; color: gray; margin-top: 2em; border-top: 1px solid #ccc; padding-top: 1em;"}
 © 2025 Luis Alberto Rodríguez Catana.

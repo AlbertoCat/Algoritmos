@@ -16,6 +16,8 @@ website:
         href: exp_3.qmd
       - text: "Experimentos y análisis de algoritmos de ordenamiento."
         href: exp_4.qmd
+      - text: "Experimentos y análisis de algoritmos de intersección de conjuntos"
+        href: exp_5.qmd
 
 format:
   html:
